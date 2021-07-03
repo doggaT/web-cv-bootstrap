@@ -1,0 +1,160 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.body {
+	font-family: 'Montserrat', sans-serif;
+	max-width: 70%;
+	margin: auto;
+	background-color: #202120;
+	color: #e1e0e1;
+	letter-spacing: 0.1em;
+	font-weight: 300;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 6rem 0;
+}
+
+header .name {
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	font-size: 2.1em;
+	font-weight: 300;
+	padding: 0 2rem;
+}
+
+header .name span {
+	font-weight: 500;
+}
+
+.contacts {
+	text-align: end;
+	padding: 1rem 2rem;
+}
+
+.address {
+	font-size: 1em;
+	padding-bottom: 1.2rem;
+	font-weight: 300;
+}
+
+.phone {
+	padding-bottom: 1.2rem;
+	font-size: 1em;
+	font-weight: 300;
+}
+
+.email {
+	display: block;
+	font-size: 1em;
+	font-weight: 300;
+}
+
+.social-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #e1e0e1;
+}
+
+.social-links a:last-child {
+	padding-top: 2rem;
+}
+
+.fa-linkedin,
+.fa-github {
+	font-size: 1.8em;
+	color: #bdbdbd;
+	transition: color 0.2s ease-in-out 0.1s;
+}
+
+a:hover .fa-linkedin {
+	color: #0e76a8;
+}
+
+a:hover .fa-github {
+	color: #5a5a5a;
+}
+
+main {
+	width: inherit;
+	font-size: 1rem;
+}
+
+ul li {
+	margin-left: 1.1rem;
+	line-height: 2;
+}
+
+p {
+	line-height: 2;
+}
+
+h3 {
+	padding: 1rem 0;
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+.section-header {
+	padding-bottom: 2rem;
+	font-weight: 500;
+	font-size: 1.3em;
+}
+
+article {
+	padding: 2.5rem 0;
+}
+
+.bold {
+	font-weight: 500;
+}
+
+.git-link {
+	font-weight: 500;
+	font-style: italic;
+}
+
+.description {
+	padding-bottom: 2rem;
+}
+
+.marks {
+	float: right;
+	margin-right: 2rem;
+}
+
+footer {
+	text-align: center;
+	padding-bottom: 3rem;
+	font-style: italic;
+	font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+	header .name {
+		font-size: 1.8em;
+	}
+
+	article h2 {
+		font-size: 1.2em;
+	}
+
+	ul li,
+	.email,
+	.address,
+	.phone {
+		font-size: 0.9em;
+	}
+}
